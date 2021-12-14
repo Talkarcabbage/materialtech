@@ -6,10 +6,10 @@
   "name": "Example Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Talkarcabbage"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://talkarcabbage.github.io/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
@@ -19,7 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      {
+        "adapter": "kotlin",
+        "value": "io.github.talkarcabbage.materialtech.MaterialTech"
+      }
     ]
   },
   "mixins": [
@@ -30,7 +33,8 @@
     "fabricloader": ">=0.11.3",
     "fabric": "*",
     "minecraft": "1.18.x",
-    "java": ">=17"
+    "java": ">=17",
+    "fabric-language-kotlin": ">=1.7.0+kotlin.1.6.0"
   },
   "suggests": {
     "another-mod": "*"
