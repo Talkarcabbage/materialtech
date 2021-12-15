@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "materialtech",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Material Tech",
+  "description": "A mod about adding and using semi-dynamic materials for their varying properties to build things.",
   "authors": [
     "Talkarcabbage"
   ],
@@ -13,8 +13,8 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "Rights Reserved, for now",
+  "icon": "assets/materialtech/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -25,9 +25,6 @@
       }
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
