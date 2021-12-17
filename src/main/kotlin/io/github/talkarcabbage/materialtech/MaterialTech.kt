@@ -3,11 +3,12 @@ package io.github.talkarcabbage.materialtech
 import net.fabricmc.api.ModInitializer
 import org.apache.logging.log4j.LogManager
 
-val LOGGER = LogManager.getLogger("materialtech")
+const val MOD_ID = "materialtech"
+val LOGGER = LogManager.getLogger(MOD_ID)
 
 object MaterialTech : ModInitializer{
     override fun onInitialize() {
-        println("Initializing the material tech mod let's go")
+        LOGGER.info("Initializing the material tech mod let's go")
     }
 
 }
